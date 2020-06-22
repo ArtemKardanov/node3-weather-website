@@ -17,7 +17,7 @@ const forecast = (latitude, longitude, callback) => {
       const feelLike = response.body.current.feelslike;
       callback(
         undefined,
-        `${weather}. It feels like ${temperature}. Currently: ${feelLike}`
+        `It is ${weather} now. And also feels like ${feelLike} but currently ${temperature} degrees out`
       );
     }
   });
